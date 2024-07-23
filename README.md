@@ -26,7 +26,8 @@ Tested and working on Linux, OSX and Cygwin.
 
 ```tmux
 # Address vim mode switching delay (http://superuser.com/a/252717/65504)
-set -s escape-time 0
+# ~5-100. This is set to 0 in original version I've forked the project from, which is le bad (see SU post above).
+set -s escape-time 50
 
 # Increase scrollback buffer size from 2000 to 50000 lines
 set -g history-limit 50000

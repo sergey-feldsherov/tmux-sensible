@@ -1,5 +1,11 @@
 # Changelog
 
+### master 2024-07-23
+- append this and prevoius commit to changelog, update README
+
+### master 2024-07-22
+- forked this project, fixed non-sensible escape-time setting
+
 ### master
 - remove `detach-on-destroy`
 - do not set `aggressive-resize` on iTerm terminal
