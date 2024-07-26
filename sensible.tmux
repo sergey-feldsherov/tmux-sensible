@@ -157,10 +157,10 @@ main() {
 	fi
 
 	# source `.tmux.conf` file - as suggested in `man tmux`
-	if key_binding_not_set "R"; then
+	if key_binding_not_set "r"; then
 		local tmux_config=$(get_tmux_config)
 
-		tmux bind-key R run-shell " \
+		tmux bind-key r run-shell " \
 			tmux source-file ${tmux_config} > /dev/null; \
 			tmux display-message 'Sourced ${tmux_config}!'"
 	fi
